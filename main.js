@@ -18,17 +18,17 @@ export function onClientRequest(request) {
     if (country === 'FR') {
        request.respondWith(
         200, {},
-        '<html><body><h1>Redirect to France 0.2</h1></body></html>')
+        '<html><body><h1>Redirect to France 0.3 </h1></body></html>')
     }
     else if (country === 'IN') {
        request.respondWith(
         200, {},
-        '<html><body><h1>Should redirect to India 0.2 </h1></body></html>')
+        '<html><body><h1>Should redirect to India 0.3 </h1></body></html>')
     }
     else if (country === 'US') {
        request.respondWith(
         200, {},
-        '<html><body><h1>Should redirect to USA 0.2 </h1></body></html>')
+        '<html><body><h1>Should redirect to USA 0.3 </h1></body></html>')
     }
 }
 
@@ -36,5 +36,5 @@ export function onClientResponse(request, response) {
     // Outputs a message to the X-Akamai-EdgeWorker-onClientResponse-Log header.
     logger.log("Adding a header in ClientResponse")
 
-    response.setHeader('EdgeWorkers', 'From Akamai EdgeWorkers 0.2')
+    response.setHeader('EdgeWorkers', 'From Akamai EdgeWorkers 0.3')
 }
