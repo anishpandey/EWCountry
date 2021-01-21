@@ -18,7 +18,7 @@ export function onClientRequest(request) {
     if (country === 'FR') {
        request.respondWith(
         200, {},
-        '<html><body><h1>Should redirect to France 0.1 </h1></body></html>')
+        '<html><body><h1>Redirect to France 0.1</h1></body></html>')
     }
     else if (country === 'IN') {
        request.respondWith(
