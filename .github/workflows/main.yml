@@ -45,5 +45,5 @@ jobs:
         EDGERC: ${{ secrets.AKAMAI_EDGERC }}
       with:
         edgeworkersName: ${{ github.event.repository.name }}
-        network: 'production'
+        network: 'production' 
         groupid: '89177' #Akamai GroupID used for registering new edgeworkers 
